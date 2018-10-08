@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,23 +11,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
-        custom:cardCornerRadius="8dp">
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="8dp">
 
         <com.archit.calendardaterangepicker.customviews.DateRangeCalendarView
             android:id="@+id/calendar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            custom:calendar_tag="Test"
-            custom:disable_date_color="#ABABAB"
-            custom:enable_past_date="true"
-            custom:header_bg="@drawable/calendar_header"
-            custom:range_color="@color/range_bg_color_app"
-            custom:selected_date_circle_color="@color/selected_date_circle_color_app"
-            custom:title_color="@color/calendar_header_title"
-            custom:editable="true"
-            custom:week_offset="0">
+            app:calendar_tag="Test"
+            app:disable_date_color="#ABABAB"
+            app:editable="true"
+            app:enable_past_date="true"
+            app:header_bg="@drawable/calendar_header"
+            app:range_color="@color/range_bg_color_app"
+            app:selected_date_circle_color="@color/selected_date_circle_color_app"
+            app:title_color="@color/calendar_header_title"
+            app:week_offset="0">
 
         </com.archit.calendardaterangepicker.customviews.DateRangeCalendarView>
 
